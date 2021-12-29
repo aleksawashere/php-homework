@@ -114,6 +114,11 @@
             ucitajPodatke(0, 50);
         });
 
+        function sortiraj(){
+            $("#hhh tr").remove();
+            ucitajPodatke(0,50);
+        }
+
         function ucitajPodatke(start, limit) {
             var sort = $("#izbor").val();
             console.log(sort);
