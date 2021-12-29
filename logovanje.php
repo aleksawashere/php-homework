@@ -24,7 +24,7 @@
             $query = mysqli_query($conn,"SELECT * FROM `vlasnik` WHERE username = '$username' AND password = '$password'");
             
             if(mysqli_num_rows($query) == 0) {
-                $sql="INSERT INTO `korisnici` (`ime_prezime`, `username`, `password`) VALUES ('$name', '$username', '$password')";
+                $sql="INSERT INTO `vlasnik` (`ime_prezime`, `username`, `password`) VALUES ('$name', '$username', '$password')";
 		
                 if ($conn->query($sql) === TRUE) {
                     echo "Podaci sačuvani u našoj bazi!";

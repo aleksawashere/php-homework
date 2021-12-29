@@ -2,10 +2,10 @@
      $conn = new mysqli('localhost', 'root', '');
     
      if(!$conn) {
-         die('Niste povezani na server!');
+         die('Niste se povezali na server!');
      }
  
      if(!mysqli_select_db($conn, 'itehdomaci')) {
-         echo 'Nepostojeća baza!';
+         echo 'Nepostojeća baza podataka!';
      }
 ?>
